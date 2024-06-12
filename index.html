@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Streamedby — Video Streaming by Madington -->
+    <script
+      type="text/javascript"
+      src="https://delivered-by-madington.com/streamedby/2.0/streamedby.js"
+    ></script>
+
+    <!-- Tailwind Play CDN, do not use for production. This is just for the sample creative -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Your MESS Creative</title>
+  </head>
+  <body>
+    <div id="creative" class="relative h-screen w-screen bg-[--bgColor]">
+      <div class="background absolute inset-0 pointer-events-none">
+        <div class="video-wrap absolute inset-0"></div>
+        <div class="image-wrap absolute inset-0"></div>
+      </div>
+      <div
+        class="content absolute inset-0 text-[--contentColor] grid items-center justify-center"
+      >
+        <div class="flex flex-col items-center justify-center space-y-4">
+          <h1 class="headline text-4xl font-bold"></h1>
+          <div class="button-wrap">
+            <button
+              class="bg-[--contentColor] py-3 px-3 rounded-[--buttonRounding] transition-all duration-700 has-[:empty]:hidden block min-w-64 hover:opacity-50"
+            >
+              <span class="text-[--bgColor]"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="foreground absolute inset-0 pointer-events-none"></div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
